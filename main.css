@@ -126,6 +126,19 @@ TODO: Confirm this works on all webpages*/
         margin-right: 10px;
 
     }
+    caption { 
+      display: table-caption;
+      text-align: center;
+    }
+    
+    .row {
+      display: flex;
+    }
+    
+    .column {
+      flex: 33.33%;
+      padding: 5px;
+    }
 
 /* Nav Bar */
   .navbar {
