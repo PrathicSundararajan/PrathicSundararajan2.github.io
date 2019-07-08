@@ -1,0 +1,223 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v3.0 | 20110126
+   License: none (public domain)
+*/
+
+/* Other Main Base Stuff*/
+  html, body, div, span, applet, object, iframe,
+  h2, h3, h4, h5, h6, p, blockquote, pre,
+  a, abbr, acronym, address, big, cite, code,
+  del, dfn, em, img, ins, kbd, q, s, samp,
+  small, strike, strong, sub, sup, tt, var,
+  b, u, i, center,
+  dl, dt, dd, ol, ul, li,
+  fieldset, form, label, legend,
+  table, caption, tbody, tfoot, thead, tr, th, td,
+  article, aside, canvas, details, embed,
+  figure, figcaption, footer, header, hgroup,
+  menu, nav, output, ruby, section, summary,
+  time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+  }
+
+/* Customizations needed for pics
+TODO: Confirm this works on all webpages*/
+    #profile{
+      max-width: 100%;
+      max-height:100%;
+      border-radius: 50%
+    }
+    #robojacketsLogo{
+
+      height: 100px;
+    }
+    #HOAGLogo{
+
+      height: 60px;
+    }
+    #scnoLogo {
+      height: 100px;
+    }
+/* For large paragraph text */
+
+/* Div Tag */
+    div {
+        word-wrap: break-word;
+    }
+/*  Header/Bodys */
+    /*Title*/
+    h1{
+      font-size: 2.33em;
+      margin-top: .75em;
+      margin-bottom: .75em;
+      margin-right: 0;
+      margin-left: 5px;
+      font-weight: bold;
+      text-align: left;
+        }
+    /*SubHeadings*/
+    h2{
+      font-size: 1.5em;
+      margin-top: .75em;
+      margin-bottom: .75em;
+      margin-right: 0;
+      font-weight: bold;
+      text-align: left;
+    }
+    h3{
+      font-size: 1em;
+      margin-top: .75em;
+      margin-bottom: .75em;
+      margin-right: 0;
+      font-weight: bold;
+      text-align: left;
+    }
+    #largeText{
+      line-height: 30px;
+    }
+    #indent {
+      margin-left: 10px;
+    }
+/* Name in Nav Bar */
+    #name {
+        margin-top: .25em;
+        margin-bottom: .25em;
+        color: white;
+        font-weight: normal;
+    }
+/* Side By Side Continers*/
+    .container{
+        display: flex;
+    }
+    .flexed{
+      max-width: 25%;
+      height:1500px; /* prob gonna have to reduce this if I add stuf underneath*/
+      align-self: top;
+      margin-left: 5px;
+      margin-right: 10px;
+    }
+    .flex-item{
+        flex-grow: 1;
+    }
+    .flexed2{
+      max-width: 75%;
+      height: 50px;
+      align-self: top;
+      margin-left: 5px;
+      margin-right: 40px;
+    }
+    .flex-item2{
+        flex-grow: 1;
+    }
+    .flex-item3{
+        flex-grow: 1;
+        margin-top: 10px;
+        margin-right: 10px;
+
+    }
+    .flex-item4{
+        flex-grow: 1;
+        margin-top: 10px;
+        margin-right: 10px;
+
+    }
+
+/* Nav Bar */
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    align-self: top;
+  }
+
+  .navbar a {
+    float: left;
+    font-size: 16px;
+    color: white;
+    text-align: top;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .dropdown {
+    float: left;
+    overflow: hidden;
+  }
+
+  .dropbtnIndex {
+     font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 20px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 13px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .navbar a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+/* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure,
+    footer, header, hgroup, menu, nav, section {
+        display: block;
+    }
+    body {
+        line-height: 1;
+    }
+    ol, ul {
+        list-style: none;
+    }
+    blockquote, q {
+        quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+        content: '';
+        content: none;
+    }
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+    }

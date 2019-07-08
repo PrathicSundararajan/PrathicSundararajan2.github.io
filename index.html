@@ -1,9 +1,11 @@
+<!-- "https://prathicsundararajan.github.io/stylesheets/main.css" -->
+<!-- TODO: Add the project date to each of the projects on their webpages -->
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <title> Personal Portfolio </title>
-        <link rel="stylesheet" href = "https://prathicsundararajan.github.io/stylesheets/main.css">
+        <link rel="stylesheet" href = "main.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
         body {
@@ -13,31 +15,51 @@
         </style>
     </head>
 
-    <div class = "topnav">
-        <a href="About.html"> About This Website</a>
-        <a href="Other.html"> Other Activities/Extra</a>
-        <a href="Projects.html"> Personal Projects</a>
-        <a href= "Home.html">Home</a>
-        <div class = "topnav-left">
-            <h1 id = "name"> Prathic Sundararajan </h1>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="pages/education.html" >Education</a>
+        <div class="dropdown">
+            <button class="dropbtnIndex">Experience/Projects
+            </button>
+            <div class="dropdown-content">
+                <a href="pages/epicLab.html">GT's EPIC Lab</a> <!-- pages/epicLab.html-->
+                <a href="pages/scno.html">Students Consulting for Non-Profit Organizations</a>
+                <a href="pages/robojackets.html">Robojackets</a>
+                <a href="pages/cubesat.html">Irvine CubeSat</a>
+                <a href="pages/ucsd.html">UCSD Summer Research</a>
+                <a href="pages/waterDesalination.html">Thermal Distillation vs Reverse Osmosis </a>
+            </div>
         </div>
+        <div class="dropdown">
+            <button class="dropbtnIndex">Work/Volunteering
+            </button>
+            <div class="dropdown-content">
+                <a href="pages/tutoring.html">Tutoring</a>
+                <a href="pages/GTAH.html">GTAH: Suite Attendant</a>
+                <a href="pages/scno.html">Students Consulting for Non-Profit Organizations</a>
+                <a href="pages/HOAG.html">HOAG Hospital</a>
+                <a href="pages/soccer.html">AYSO Referee</a>
+                
+            </div>
+          </div>
+          <a href="#news">About This Website</a>
     </div>
 
     <div id = 'title'>
-        <h1> Introduction Pages! </h1>
+        <h1> Introduction Page! </h1>
     </div>
 
-<div class=  "container"; overflow: hidden;>
-    <div class="flexed">
-        <font> Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test!Test! </font>
+    <div class=  "container" overflow: hidden;>
+        <div class="flexed">
+            <img align = "center" id = "profile" src="Images/Profile Picture.png"/>
+        </div>
+        <div class="flex-item">
+            <body id="largeText"> Hi! My name is Prathic Sundararajan. I am an undergraduate student at Georgia Institute of Technology pursuing a degree in Biomedical Engineering with a CS Minor. The main purpose of this website is to provide further information regarding the projects I have worked on in the past. More information regarding why I chose this format to convey this information can be found on the "About This Website" tab in the navigation bar at the top. I have found that it is much easier to navigate through this website while referencing my linkedin page which I have hyperlinked <a href= "https://www.linkedin.com/in/prathic-sundararajan-1a185813">HERE </a>. </body>
+        </div>
     </div>
-    <div class="flex-item">
-        <img align = "center" id = "profile" src="Images/Profile Picture.png"/>
-    </div>
-</div>
 
 
 </html>
 
 
-<!-- Add in multiple abs and also add javascript and css components?>
+<!-- Add in overall projects timeline?>

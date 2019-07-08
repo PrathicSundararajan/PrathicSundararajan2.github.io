@@ -40,14 +40,24 @@ TODO: Confirm this works on all webpages*/
     }
 /* Page Header */
     h1{
-          font-size: 2.33em;
-          margin-top: .75em;
-          margin-bottom: .75em;
-          margin-left: 5px;
-          margin-right: 0;
-          font-weight: bold;
-          text-align: center;
-        }
+      font-size: 2.33em;
+      margin-top: .75em;
+      margin-bottom: .75em;
+      margin-left: 5px;
+      margin-right: 0;
+      font-weight: bold;
+      text-align: center;
+      }
+    h3{
+      font-size: 1em;
+      margin-top: .75em;
+      margin-bottom: .75em;
+      margin-left: 5px;
+      margin-right: 0;
+      font-weight: bold;
+      text-align: center;
+
+    }
         #about {
 
          }

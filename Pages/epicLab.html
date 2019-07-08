@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> Personal Portfolio </title>
+        <link rel="stylesheet" href = "../main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+        body {
+          margin: 0px;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        </style>
+    </head>
+
+    <div class="navbar">
+        <a href="../index.html">Home</a>
+        <a href="education.html">Education</a>
+        <div class="dropdown">
+            <button class="dropbtn">Experience/Projects
+            </button>
+            <div class="dropdown-content">
+                <a href="epicLab.html">GT's EPIC Lab</a>
+                <a href="scno.html">Students Consulting for Non-Profit Organizations</a>
+                <a href="robojackets.html">Robojackets</a>
+                <a href="cubesat.html">Irvine CubeSat</a>
+                <a href="ucsd.html">UCSD Summer Research</a>
+                <a href="waterDesalination.html">Thermal Distillation vs Reverse Osmosis </a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Work/Volunteering
+            </button>
+            <div class="dropdown-content">
+                <a href="#">Tutoring</a>
+                <a href="#">GTAH: Suite Attendant</a>
+                <a href="scno.html">Students Consulting for Non-Profit Organizations</a>
+                <a href="#">HOAG Hospital</a>
+                <a href="#">AYSO Referee</a>
+                <a href="#">Irvine City Summer Camp </a>
+            </div>
+          </div>
+          <a href="#news">About This Website</a>
+    </div>
+
+    <div class=  "container" overflow: hidden;>
+        <div class="flexed2" id = 'title'>
+            <h1> Exoskeleton And Prosthetic Intelligent Controls Lab </h1>
+        </div>
+
+        <div class="flex-item3">
+            <img align = "right" id = "robojacketsLogo" src="../Images/EPIC.png"/>
+        </div>
+    </div>
+    <!-- Add EPIC Lab Logo -->
+
+    <div id= "indent">
+        <h2> Introduction </h2>
+            <p id="largeText" >I joined the lab under the Human Robotic Augmentation Team through the Vertically Integrated Projects program at Georgia Tech. My team led by Ben Shafer, a GT grad student, is centered around testing a variety of controllers (including proportional myoelectric, impedance, neuromuscular model based, hybrids, etc.) and utilizing Human in the Loop Optimization (HiLo) to decrease the metabolic cost of using a hip exoskeleton. The role of my partner and I in the project was to develop a controller with a user interface using MatLab and to link this controller to a Simulink model. The goal of the controller we are working on is to adjust control parameters live while also allowing the user to visualize the current state of the exoskeleton better than what was previously provided with Simulink Real Time Explorer. The ultimate goal is to reduce the total time spent testing with a person in the hip exoskeleton.</p>
+        <h2> The Project </h2>
+            <p id="largeText" > My partner and I decided to split the project into two main components. Component one was the ability to access the Simulink model from our controller and change the control parameters live without having to rebuild the model. The second component was the ability to pull data off the currently running Simulink model and into our GUI. My partner focused on the first component while I worked on the second. I struggled a lot initially in the project attempting to figure out the best way to pull a constantly changing value from the Simulink model. I considered C-Mex functions [CONFIRM], creating a user block and then setting the user data field to the value I needed but in the end with a little bit of external help I decided that host scopes would be the most effective method to implement in this case. After making this decision, I implemented a timer object on the MATLAB side of the project so that it would constantly pull the data values from the running Simulink model at a fast enough rate to keep the graphs up to date. I found that I could not surpass 14 Hz with the timer object in the GUI if I wanted it to not show any lag. I ended up deciding to use an animated line to graph the data we pulled from the model because it was the easiest one that met all our requirements.</p>
+        <h2> The Final Product </h2>
+            <p id="largeText">By the end of the semester, we had finished working on our MATLAB GUI and it was ready to be packaged into an app. We were now able to control parameters from the GUI and also provided a lot of customizable features in terms of graphing the data live. In addition, the user is also able to save the data recorded during the testing session. Our final step was to modularize the GUI so that we would be able to use the GUI with various different Simulink models. Once we had finished making it, we presented the app to the rest of the members in the lab. </p>
+        <!-- TODO: INSERT PICTURES of the APP and it graphing live -->
+        <h2> Longterm Outcome </h2>
+            <p id="largeText"> This experience overall was very useful as I got a lot of exposure to a lab environment. I learned a lot in terms of actually getting hands on with a project. However, I would say that the most important lesson I learned was the importance of not going down rabbit holes when presented with a broad problem. To elaborate a little bit, early on in the project the first thing I had to figure out was how to pull data from the Simulink model and into the MATLAB app at a very fast rate. I evaluated a couple different possibilities and looked into the different options. I spent a lot of time trying to do this by using user defined MATLAB function blocks and changing their user data parameter. However, this was extremely complex so I was stuck on this part of the project for a while. It was during this roadblock where I got help from my mentor, Ben, during which he suggested I check out host scopes. Host scopes were the answer to all my problems but I had not not realized this because I had not come across it during my initial research. This roadblock could have been easily avoided if I had looked into how I could use Simulink a little bit more from a higher level perspective to achieve my goal rather than immediately diving into user defined functions. Through this, I learned the importance of when presented with a problem, attempting to find the easiest and most efficient way to solve a problem rather than exhausting all my resources into one sole idea that could potentially work.</p>
+    </div>
+</html>
