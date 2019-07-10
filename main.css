@@ -63,9 +63,7 @@ TODO: Confirm this works on all webpages*/
     /*SubHeadings*/
     h2{
       font-size: 1.5em;
-      margin-top: .75em;
-      margin-bottom: .75em;
-      margin-right: 0;
+      padding: 5px;
       font-weight: bold;
       text-align: left;
     }
@@ -74,11 +72,13 @@ TODO: Confirm this works on all webpages*/
       margin-top: .75em;
       margin-bottom: .75em;
       margin-right: 0;
+      padding: 5px;
       font-weight: bold;
       text-align: left;
     }
     #largeText{
       line-height: 30px;
+      padding: 5px;
     }
     #indent {
       margin-left: 10px;
