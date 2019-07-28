@@ -76,6 +76,9 @@ TODO: Confirm this works on all webpages*/
       font-weight: bold;
       text-align: left;
     }
+    #largeText2{
+      line-height: 30px;
+    }
     #largeText{
       line-height: 30px;
       padding: 5px;
@@ -100,9 +103,11 @@ TODO: Confirm this works on all webpages*/
       align-self: top;
       margin-left: 5px;
       margin-right: 10px;
+      padding-left: 5px;
     }
     .flex-item{
         flex-grow: 1;
+        padding-right: 5px;
     }
     .flexed2{
       max-width: 75%;
