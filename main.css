@@ -23,25 +23,32 @@
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
+    font-family: Arial;
   }
 
 /* Customizations needed for pics
 TODO: Confirm this works on all webpages*/
+
+   
     #profile{
       max-width: 100%;
       max-height:100%;
       border-radius: 50%
     }
     #robojacketsLogo{
-
       height: 100px;
     }
     #HOAGLogo{
-
       height: 60px;
     }
     #scnoLogo {
       height: 100px;
+    }
+    #nhsLogo {
+      height: 65px;
+    }
+    #gtLogo {
+      height: 35px;
     }
 /* For large paragraph text */
 
@@ -52,6 +59,7 @@ TODO: Confirm this works on all webpages*/
 /*  Header/Bodys */
     /*Title*/
     h1{
+      font-family: Arial;
       font-size: 2.33em;
       margin-top: .75em;
       margin-bottom: .75em;
@@ -62,12 +70,14 @@ TODO: Confirm this works on all webpages*/
         }
     /*SubHeadings*/
     h2{
+      font-family: Arial;
       font-size: 1.5em;
       padding: 5px;
       font-weight: bold;
       text-align: left;
     }
     h3{
+      font-family: Arial;
       font-size: 1em;
       margin-top: .75em;
       margin-bottom: .75em;
@@ -76,27 +86,46 @@ TODO: Confirm this works on all webpages*/
       font-weight: bold;
       text-align: left;
     }
+    h4{
+      font-family: Arial;
+      font-size: 1.5em;
+      padding: 5px;
+      text-align: left;
+    }
     #largeText2{
+      font-family: Arial;
       line-height: 30px;
     }
     #largeText{
+      font-family: Arial;
       line-height: 30px;
       padding: 5px;
     }
-    #indent {
+    #indent {      
       margin-left: 10px;
     }
 /* Name in Nav Bar */
     #name {
+      font-family: Arial;
         margin-top: .25em;
         margin-bottom: .25em;
         color: white;
         font-weight: normal;
     }
+    .educationTitle {
+      font-family: Arial;
+      padding-bottom: 0%;
+    }
 /* Side By Side Continers*/
     .container{
-        display: flex;
-    }
+      display: flex;  
+      }
+
+    .container-long{
+      display: flex;
+      overflow-x: auto;
+      overflow-y: visible;
+      }
     .flexed{
       max-width: 25%;
       height:1500px; /* prob gonna have to reduce this if I add stuf underneath*/
@@ -111,6 +140,7 @@ TODO: Confirm this works on all webpages*/
     }
     .flexed2{
       max-width: 75%;
+      min-width: 50%;
       height: 50px;
       align-self: top;
       margin-left: 5px;
@@ -239,3 +269,5 @@ TODO: Confirm this works on all webpages*/
         border-collapse: collapse;
         border-spacing: 0;
     }
+
+    /* Extra google fonts*/
