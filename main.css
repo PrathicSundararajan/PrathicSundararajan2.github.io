@@ -89,7 +89,7 @@ TODO: Confirm this works on all webpages*/
     }
     h4{
       font-family: Arial;
-      font-size: 1.5em;
+      font-size: 1em;
       padding: 5px;
       text-align: left;
     }
@@ -130,6 +130,10 @@ TODO: Confirm this works on all webpages*/
       overflow-y: visible;
       height: auto;
       }
+      .container-long2{
+        display: flex;
+
+        }
     .flexed{
       max-width: 25%;
       height:1500px; /* prob gonna have to reduce this if I add stuf underneath*/
@@ -165,11 +169,8 @@ TODO: Confirm this works on all webpages*/
         margin-right: 10px;
 
     }
-    .flex-item4{
+    .flex-item5{
         flex-grow: 1;
-        margin-top: 10px;
-        margin-right: 10px;
-
     }
     caption { 
       display: table-caption;
