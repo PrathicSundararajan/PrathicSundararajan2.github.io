@@ -50,6 +50,7 @@ TODO: Confirm this works on all webpages*/
     #gtLogo {
       height: 35px;
     }
+
 /* For large paragraph text */
 
 /* Div Tag */
@@ -118,13 +119,16 @@ TODO: Confirm this works on all webpages*/
     }
 /* Side By Side Continers*/
     .container{
-      display: flex;  
+      display: flex; 
+      height: auto; 
+      overflow-y: auto;
       }
 
     .container-long{
       display: flex;
       overflow-x: auto;
       overflow-y: visible;
+      height: auto;
       }
     .flexed{
       max-width: 25%;
@@ -161,6 +165,12 @@ TODO: Confirm this works on all webpages*/
         margin-right: 10px;
 
     }
+    .flex-item4{
+        flex-grow: 1;
+        margin-top: 10px;
+        margin-right: 10px;
+
+    }
     caption { 
       display: table-caption;
       text-align: center;
@@ -169,9 +179,17 @@ TODO: Confirm this works on all webpages*/
     .row {
       display: flex;
     }
-    
+
     .column {
       flex: 33.33%;
+      padding: 5px;
+    }
+    .column2 {
+      flex: 50%;
+      padding: 5px;
+    }
+    .column3 {
+      flex: 25%;
       padding: 5px;
     }
 
@@ -270,4 +288,4 @@ TODO: Confirm this works on all webpages*/
         border-spacing: 0;
     }
 
-    /* Extra google fonts*/
+    /* Styling for Comparison boxes*/
