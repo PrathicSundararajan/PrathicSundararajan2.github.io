@@ -29,7 +29,7 @@
 /* Customizations needed for pics
 TODO: Confirm this works on all webpages*/
 
-   
+
     #profile{
       max-width: 100%;
       max-height:100%;
@@ -102,7 +102,7 @@ TODO: Confirm this works on all webpages*/
       line-height: 30px;
       padding: 5px;
     }
-    #indent {      
+    #indent {
       margin-left: 10px;
     }
 /* Name in Nav Bar */
@@ -119,8 +119,8 @@ TODO: Confirm this works on all webpages*/
     }
 /* Side By Side Continers*/
     .container{
-      display: flex; 
-      height: auto; 
+      display: flex;
+      height: auto;
       overflow-y: auto;
       }
 
@@ -172,11 +172,11 @@ TODO: Confirm this works on all webpages*/
     .flex-item5{
         flex-grow: 1;
     }
-    caption { 
+    caption {
       display: table-caption;
       text-align: center;
     }
-    
+
     .row {
       display: flex;
     }
