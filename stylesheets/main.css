@@ -40,6 +40,7 @@
     text-align: top;
     padding: 14px 16px;
     text-decoration: none;
+    z-index: 100;
   }
 /*this is for social media icons */
   .fa {
