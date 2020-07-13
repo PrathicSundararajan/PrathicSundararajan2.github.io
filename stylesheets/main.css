@@ -1,29 +1,147 @@
-
-
 .mainBody{
-  background-color: #292929;
+  background-color: #292929; /*#484848;*/
   font-family: sans-serif;
+  padding-bottom: 10px;
 }
+
 
 .profilePic {
-  width: 20%;
+  width: 40%;
   padding: 10px;
   border-radius: 50%
-
-
-
-}
-.centered {
-  top: 50%;
-  left: 50%;
-  transform: translate(0, -40%);
-  color: white;
-
 }
 
 .NameHeader{
-  font-size: 24px;
-  transform: translate(0, 70%);
+  font-size: 140%;
+  /*margin-bottom: 0px:
+  transform: translate(0, -40%);*/
+  transform: translate(0, -25%);
+  color: white;
+}
+
+.row {
+    margin-right: 0px;
+    margin-bottom: 0px;
+}
+
+
+.insideText {
+    color: white;
+}
+
+.pic{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 5px solid #e95065;
+    border-radius: 25%;
+    width: 50%;
+}
+
+.pic2{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 5px solid #e95065;
+    border-radius: 20%;
+    width: 90%;
+}
+
+
+
+  /* this is for the different categories*/
+  .work {
+      border: 5px solid #e95065;
+      /* background-color: #DEE4E7; #49564c*/
+  }
+  .research{
+      /*background-color: #DEE4E7; /*#49564c*/
+      border: 5px solid #e57255;
+  }
+  .passion{
+      /*background-color: #DEE4E7; /*#49564c*/
+      border: 5px solid #46bddf;
+  }
+  .volunteer{
+      /*background-color: #DEE4E7; /*#49564c*/
+      border: 5px solid #49564c;
+  }
+
+  /*this is for the expandable rows*/
+  .row:after {
+      content: "";
+      display: table;
+      clear: both;
+  }
+  .rowAll {
+      display: none;
+      border-radius: 10px;
+      background-color: #DEE4E7;
+      padding: 5px 5px 5px 5px;
+  }
+  .row1 {
+      width: 50%;
+  }
+  .row2 {
+      margin-left: 12.5%;
+      width: 50%;
+  }
+  .row3 {
+      margin-left: 33.33%;
+      width: 50%;
+  }
+  .row4 {
+      margin-left: 50%;
+      width: 50%;
+  }
+  .closebtn {
+    /*margin-bottom: -50%;*/
+    transform: translate(40%,-20%);
+    float: right;
+    color: black;
+    font-size: 25px;
+    cursor: pointer;
+  }
+
+/* this is for the legend */
+  .my-legend .legend-title {
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-size: 90%;
+    }
+  .my-legend .legend-scale ul {
+    margin: 0;
+    margin-bottom: 5px;
+    padding: 0;
+    float: left;
+    list-style: none;
+    }
+  .my-legend .legend-scale ul li {
+    font-size: 80%;
+    list-style: none;
+    margin-left: 0;
+    line-height: 18px;
+    margin-bottom: 2px;
+    }
+  .my-legend ul.legend-labels li span {
+    display: block;
+    float: left;
+    height: 16px;
+    width: 30px;
+    margin-right: 5px;
+    margin-left: 0;
+    border: 1px solid #999;
+    }
+  .my-legend .legend-source {
+    font-size: 70%;
+    color: #999;
+    clear: both;
+    }
+  .my-legend a {
+    color: #777;
+    }
+    .legendPadding {
+    margin-left: 15%;
+    margin-top: 75%;
 }
 
 /* Nav Bar */
@@ -32,7 +150,6 @@
     background-color: #333;
     align-self: top;
   }
-
   .navbar a {
     float: left;
     font-size: 16px;
@@ -42,8 +159,10 @@
     text-decoration: none;
     z-index: 100;
   }
+
 /*this is for social media icons */
   .fa {
+    transform: translate(25%, -150%);
     padding: 5px;
     font-size: 30px;
     width: 30px;
@@ -52,34 +171,25 @@
     margin: 5px 5px;
     border-radius: 50%;
   }
-
   .fa:hover {
       opacity: 0.7;
   }
-
-
-
   .fa-envelope {
     background: #dd4b39;
     color: white;
   }
-
   .fa-github {
     background: grey;
     color: white;
   }
-
   .fa-linkedin {
     background: #007bb5;
     color: white;
   }
-
   .fa-file-pdf-o {
     background: #bb0000;
     color: white;
   }
-
-
 
 /* link to background effect https://codepen.io/333397406/pen/PQdMOO */
   .lines {
@@ -89,7 +199,7 @@
     right: 0;
     height: 100%;
     margin: auto;
-    width: 90vw;
+    width: 100%;
   }
   .lines .line {
     z-index: -1;
@@ -111,8 +221,8 @@
     left: 0;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), color-stop(75%, #ffffff), to(#ffffff));
     background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #FF0000 75%, #FF0000 100%);
-    -webkit-animation: run 7s 0s infinite;
-            animation: run 7s 0s infinite;
+    -webkit-animation: run 2s 0s infinite;
+            animation: run 5s 0s infinite;
     -webkit-animation-fill-mode: forwards;
             animation-fill-mode: forwards;
     -webkit-animation-timing-function: cubic-bezier(0.4, 0.26, 0, 0.97);
@@ -129,10 +239,9 @@
     margin-left: 25%;
   }
   .lines .line:nth-child(3)::after {
-    -webkit-animation-delay: 2.5s;
+    -webkit-animation-delay: 1s;
             animation-delay: 2.5s;
   }
-
   @-webkit-keyframes run {
     0% {
       top: -50%;
@@ -141,7 +250,6 @@
       top: 110%;
     }
   }
-
   @keyframes run {
     0% {
       top: -50%;
@@ -150,3 +258,17 @@
       top: 110%;
     }
   }
+
+
+  /* Potentially needed stuff */
+  /*.mainRows {
+  padding-bottom: 10px;
+  color:white;
+  }*/
+  /*.col { used to have this after every bg
+      margin-left: 5px;
+      margin-right: 5px;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      border-radius: 25%;
+  }*/

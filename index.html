@@ -5,38 +5,193 @@
     <head>
         <meta charset="utf-8">
         <title> Personal Portfolio </title>
-        <link rel="stylesheet" href = "stylesheets/main.css">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href = "stylesheets/main.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <script src="scripts/main.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
     </head>
     <div class="navbar">
-            <a style = "center" href="https://prathicsundararajan.github.io/index2.html">MY OLD WEBSITE</a>
+        <a style = "center" href="https://prathicsundararajan.github.io/index2.html">MY OLD WEBSITE</a>
     </div>
-    <div class="lines">
+    <div class="lines" id = "mainLines">
         <div class="line"></div>
         <div class="line"></div>
         <div class="line"></div>
     </div>
     <body class = "mainBody" onload = "sendAlert()">
-
-      <div class = "text-center"> <!-- this is for the profile pic, names and social icons -->
-        <img src="Images/ProfilePicture3.jpeg" class="profilePic" alt="...">
-        <div class="centered">
-          <p class = "NameHeader"> Prathic Sundararajan<p>
-            <a href="#" class="fa fa-linkedin"></a>
-            <a href="#" class="fa fa-github"></a>
-            <a href="#" class="fa fa-envelope"></a>
-            <a href="#" class="fa fa-file-pdf-o"></a>
-          </div>
-      </div>
-      <div class = "text-center">
-
-      </div>
-      <h1> Introduction Page! </h1>
+        <div class = "row">
+            <div class = "col-md-3"> </div>
+            <div class = "col-md-6"> <!-- this is for the profile pic, names and social icons -->
+                <div class = "text-center">
+                    <img src="Images/ProfilePicture3.jpeg" class="profilePic" alt="...">
+                    <p class = "NameHeader"> Prathic Sundararajan <br> (GT BME & CS Minor)<p>
+                    <a href="#" class="fa fa-linkedin"></a>
+                    <a href="#" class="fa fa-github"></a>
+                    <a href="#" class="fa fa-envelope"></a>
+                    <a href="#" class="fa fa-file-pdf-o"></a>
+                </div>
+            </div>
+            <div class = "col-md-3">
+                <div class='my-legend insideText legendPadding'>
+                    <div class='legend-title'>Type of Experience Key </div>
+                    <div class='legend-scale'>
+                        <ul class='legend-labels'>
+                            <li><span style='background:#e95065;'></span>Work</li>
+                            <li><span style='background:#e57255;'></span>Research</li>
+                            <li><span style='background:#46bddf;'></span>Passion Projects</li>
+                            <li><span style='background:#49564c;'></span>Volunteer</li>
+                        </ul>
+                    </div>
+                <!--<div class='legend-source'>Source: <a href="#link to source">Name of source</a></div>-->
+                </div>
+            </div>
+        </div> <!-- this is for profile pic and key -->
+        <div class = "container-fluid">
+            <h4 class = "insideText"> Current Roles/Projects </h4>
+            <div class="row">
+                <div class="bg col" onclick="openTab('b1')">
+                    <div  class = "text-center">
+                        <img class = "pic work" src ="images/hce.png">
+                        <h6 class = "insideText"> R&D Engineering Intern</h6>
+                    </div>
+                </div>
+                <div class="bg col" onclick="openTab('b2')">
+                    <div  class = "text-center">
+                        <img class = "pic research" src ="images/gtBME.jpg">
+                        <h6 class = "insideText"> Gleason's Lab: Research Assistant</h6>
+                    </div>
+                </div>
+                <div class="bg col" onclick="openTab('b3')">
+                    <div  class = "text-center">
+                        <img class = "pic passion" src ="images/bmeRobotics.png">
+                        <h6 class = "insideText"> Humanoid Sub-Team</h6>
+                    </div>
+                </div>
+                <div class="bg col" onclick="openTab('b4')">
+                    <div  class = "text-center">
+                        <img class = "pic volunteer" src ="images/supp.png">
+                        <h6 class = "insideText"> SUPP: Organization President</h6>
+                    </div>
+                </div>
+            </div>
+            <div id="b1" class="row1 rowAll work">
+                <div class = "row">
+                    <div class = "col-sm-11">
+                        <h2>Box 1</h2>
+                    </div>
+                    <div class="closebtn col-sm-1">
+                        <p onclick = "closeTab('b1')"> x <p>
+                    </div>
+                </div>
+                <p>Lorem ipsum..</p>
+            </div>
+            <div id="b2" class="row2 rowAll research">
+                <div class = "row">
+                    <div class = "col-sm-11">
+                        <h2>Box 2</h2>
+                    </div>
+                    <div class="closebtn col-sm-1">
+                        <p onclick = "closeTab('b2')"> x <p>
+                    </div>
+                </div>
+                <p>Lorem ipsum..</p>
+            </div>
+            <div id="b3" class="row3 rowAll passion" >
+                <div class = "row">
+                    <div class = "col-sm-11">
+                        <h2>Box 3</h2>
+                    </div>
+                    <div class="closebtn col-sm-1">
+                        <p onclick = "closeTab('b3')">x<p>
+                    </div>
+                </div>
+                <p>Lorem ipsum..</p>
+            </div>
+            <div id="b4" class="row4 rowAll volunteer">
+                <div class = "row">
+                    <div class = "col-sm-11">
+                        <h2>Box 4</h2>
+                    </div>
+                    <div class="closebtn col-sm-1">
+                        <p onclick = "closeTab('b4')">x<p>
+                    </div>
+                </div>
+                <p>Lorem ipsum..</p>
+            </div>
+            <h4 class = "insideText"> Past Research Projects </h4>
+            <!--<div class="row">
+                <div class="bg col" onclick="openTab('b5')">
+                    <div  class = "text-center">
+                        <img class = "pic work" src ="images/gtri (1).jpg">
+                        <h6 class = "insideText"> R&D Engineering Intern</h6>
+                    </div>
+                </div>
+                <div class="bg col" onclick="openTab('b6')">
+                    <div  class = "text-center">
+                        <img class = "pic research" src ="images/NHS.jpg">
+                        <h6 class = "insideText"> Gleason's Lab: Research Assistant</h6>
+                    </div>
+                </div>
+                <div class="bg col" onclick="openTab('b7')">
+                    <div  class = "text-center">
+                        <img class = "pic passion" src ="images/bmeRobotics.png">
+                        <h6 class = "insideText"> BME Robotics: Humanoid Sub-Team Member</h6>
+                    </div>
+                </div>
+                <div class="bg col" onclick="openTab('b8')">
+                    <div  class = "text-center">
+                        <img class = "pic volunteer" src ="images/supp.png">
+                        <h6 class = "insideText"> SUPP: Organization President</h6>
+                    </div>
+                </div>
+            </div>
+            <div id="b5" class="row1 rowAll work">
+                <div class = "row">
+                    <div class = "col-sm-11">
+                        <h2>Box 5</h2>
+                    </div>
+                    <div class="closebtn col-sm-1">
+                        <p onclick = "closeTab('b5')">x<p>
+                    </div>
+                </div>
+                <p>Lorem ipsum..</p>
+            </div>
+            <div id="b6" class="row2 rowAll research">
+                <div class = "row">
+                    <div class = "col-sm-11">
+                        <h2>Box 6</h2>
+                    </div>
+                    <div class="closebtn col-sm-1">
+                        <p onclick = "closeTab('b6')">x<p>
+                    </div>
+                </div>
+                <p>Lorem ipsum..</p>
+            </div>
+            <div id="b7" class="row3 rowAll passion" >
+                <div class = "row">
+                    <div class = "col-sm-11">
+                        <h2>Box 7</h2>
+                    </div>
+                    <div class="closebtn col-sm-1">
+                        <p onclick = "closeTab('b7')">x<p>
+                    </div>
+                </div>
+                <p>Lorem ipsum..</p>
+            </div>
+            <div id="b8" class="row4 rowAll volunteer">
+                <div class = "row">
+                    <div class = "col-sm-11">
+                        <h2>Box 8</h2>
+                    </div>
+                    <div class="closebtn col-sm-1">
+                        <p onclick = "closeTab('b8')">x<p>
+                    </div>
+                </div>
+                <p>Lorem ipsum..</p>
+            </div>-->
+        </div>
     </body>
-
+<script src="scripts/main.js"></script>
 
 </html>
 
