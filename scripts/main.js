@@ -1,5 +1,5 @@
 function sendAlert(){
-  alert("Currently working on changing my website. Please refer to MY OLD WEBSITE button for current portfolio!")
+  alert("Currently working on changing my website. Some cards will lead to my old website!")
 }
 updatingLineHeight(1);
 
